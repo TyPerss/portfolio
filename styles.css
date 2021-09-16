@@ -1,0 +1,96 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+h1, p {
+   background-color: #DDE0E3;    /* Light gray */
+   padding: 10px;
+ }
+
+ h2, ol {
+    padding: 5px;
+ }
+
+ .navBar {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: rgb(29, 60, 107);
+ }
+ 
+ .navBar li {
+   float: left;
+ }
+ 
+ .navBar li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ /* Change the link color to #111 (black) on hover */
+ .navBar li a:hover {
+   background-color: rgb(122, 78, 21);
+ }
+ 
+ em, strong {
+   background-color: #B2D6FF;    /* Light blue */
+ }
+
+ hr {
+   height: 5px;
+   background-color: rgb(54, 50, 50);
+ }
+
+ .page {
+   width: 200px;
+   margin: 0 auto;
+ }
+.contact {
+   text-align: center;
+}
+
+
+.webLinkButton:link,
+.webLinkButton:visited {
+   display: block;             /* Add this */
+   text-decoration: none;      /* Add this */
+ 
+   color: #FFF;                /* The rest is the same */
+   background-color: #3c6ba1;
+   font-weight: bold;
+   padding: 20px;
+   text-align: center;
+   border: 2px solid #5D6063;
+   border-radius: 5px;
+ 
+   width: 200px;
+   margin: 20px auto;
+ }
+
+.webLinkButton:hover,
+.webLinkButton:visited:hover {
+   color: #FFF;
+   background-color: #5081b9;
+}
+
+.webLinkButton:active,
+.webLinkButton:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
+
+.github:link,
+.github:visited {
+   background-color: rgb(36, 35, 35);
+}
+
+.github:hover,
+.github:visited:hover {
+   background-color: rgb(47, 48, 48);
+}
