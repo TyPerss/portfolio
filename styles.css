@@ -3,54 +3,82 @@
    padding: 0;
    box-sizing: border-box;
  }
-
+ 
  .menu-container {
    color: #fff;
    background-color: #5995DA;  /* Blue */
    padding: 20px 0;
+   display: flex;
+   justify-content: center;
  }
  
  .menu {
-   border: 1px solid #fff;  /* For debugging */
+   border: 1px solid #fff;
    width: 900px;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .navigator {
+    display: flex;
+    justify-content: flex-end;
  }
 
+ .projects {
+    margin-left: auto;
+ }
+
+ .passions {
+    margin-left: 20px;
+ }
+
+ .header-container {
+   color: #5995DA;
+   background-color: #D6E9FE;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .header {
+   width: 900px;
+   height: 300px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   flex: 1;
+ }
+
+ .footer {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .footer-item {
+   border: 1px solid #fff;
+   background-color: #D6E9FE;
+   height: 200px;
+   flex: 1;
+ } 
+
+ .footer-one,
+ .footer-three {
+   background-color: #5995DA;
+   flex: initial;
+   width: 300px;
+ }
+ 
 h1, p {
-   background-color: #DDE0E3;    /* Light gray */
+   background-color: #DDE0E3;
    padding: 10px;
  }
 
  h2, ol {
     padding: 5px;
  }
-
- .navBar {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
-   background-color: rgb(29, 60, 107);
- }
- 
- .navBar li {
-   float: left;
- }
- 
- .navBar li a {
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
- }
- 
- /* Change the link color to #111 (black) on hover */
- .navBar li a:hover {
-   background-color: rgb(122, 78, 21);
- }
  
  em, strong {
-   background-color: #B2D6FF;    /* Light blue */
+   background-color: #B2D6FF;
  }
 
  hr {
@@ -58,10 +86,6 @@ h1, p {
    background-color: rgb(54, 50, 50);
  }
 
- .page {
-   width: 200px;
-   margin: 0 auto;
- }
 .contact {
    text-align: center;
 }
@@ -69,10 +93,10 @@ h1, p {
 
 .webLinkButton:link,
 .webLinkButton:visited {
-   display: block;             /* Add this */
-   text-decoration: none;      /* Add this */
+   display: block;             
+   text-decoration: none;      
  
-   color: #FFF;                /* The rest is the same */
+   color: #FFF;             
    background-color: #3c6ba1;
    font-weight: bold;
    padding: 20px;
@@ -93,7 +117,7 @@ h1, p {
 .webLinkButton:active,
 .webLinkButton:visited:active {
   color: #FFF;
-  background-color: #5995DA;  /* Blue */
+  background-color: #5995DA;
 }
 
 .github:link,
@@ -104,4 +128,10 @@ h1, p {
 .github:hover,
 .github:visited:hover {
    background-color: rgb(47, 48, 48);
+}
+
+@media only screen and (max-width: 400px) {
+   body{
+      background-color:darksalmon;
+   }
 }
