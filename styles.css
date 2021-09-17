@@ -4,6 +4,17 @@
    box-sizing: border-box;
  }
 
+ .menu-container {
+   color: #fff;
+   background-color: #5995DA;  /* Blue */
+   padding: 20px 0;
+ }
+ 
+ .menu {
+   border: 1px solid #fff;  /* For debugging */
+   width: 900px;
+ }
+
 h1, p {
    background-color: #DDE0E3;    /* Light gray */
    padding: 10px;
